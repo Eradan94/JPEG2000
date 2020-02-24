@@ -47,15 +47,18 @@ What problem(s) is studied ?
 Why is it relevant ? 
 What solution(s) is proposed ? 
 Which contributions (theory, numerics, etc) ? 
+
 Introduction : 
 Presentation of the problem(s). 
 Previous works (at least a few citations). If relevant, include things that you have seen during the lectures.
 Contributions. Why is the studied method different/better/worse/etc. than existing previous works. 
+
 Main body (~10 pages) : 
 Presentation of the method(s). 
 Theoretical guarantees. 
 Numerics. 
 Conclusion and perspective (~1 page)
+
 Summary of the result obtained: pros and cons (limitation, problems, error in the articles, etc)
 Possible improvement/extension
 Bibliography (~1 page)
