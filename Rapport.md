@@ -42,7 +42,7 @@ L’algorithme du format JPEG2000 se décompose en cinq grandes phases :
 
 La transformée en ondelette utilise deux filtres pour séparer les hautes fréquences de l’image des basses. Une convolution entre les filtres et le signal permet d’effectuer une itération de la transformée. En 2D, ils sont appliqués en hauteur et en largeur, ce qui donne 4 blocs, nommés `LL`, `LH`, `HL`, et `HH` : `L` pour low, les basses fréquences, et `H` pour high, les hautes fréquences. La première lettre correspond au filtrage horizontal et la deuxième au filtrage vertical. La convolution est ensuite réappliquée en boucle sur le bloc `LL` pour faire autant d’itérations que nécessaire.
 
-![Différentes itérations de la transformée en ondelettes](doc-images/wavelet.png)
+![Différentes itérations de la transformée en ondelettes](doc-images/wavelet.png){width=50%}
 
 #### Quantification
 
