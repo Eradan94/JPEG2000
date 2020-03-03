@@ -10,11 +10,11 @@ L’un des formats d’image le plus répandu est le format JPEG (<i>Joint Photo
 
 ### Pertinence
 
-Le format JPEG2000 a pour but de compresser plus efficacement une image que le JPEG. Le JPEG2000 a donc pour avantage de proposer une meilleure qualité d’image pour des taux de compression très élevé, malgré tout, la différence entre JPEG et JPEG2000 sur des taux de compression moyens est faible.
+Le format JPEG2000 a pour but de compresser plus efficacement une image que le JPEG. Le JPEG2000 a donc pour avantage de proposer une meilleure qualité d’image pour des taux de compression très élevé, malgré tout, la différence entre JPEG et JPEG2000 sur des taux de compression moins imporants est faible.
 
 ### Solution Proposée
 
-Tandis que le format JPEG utilise une transformée en cosinus discrète, le format JPEG2000 s’appuie sur une transformée en ondelettes mais aussi par la sélection de régions d’intérêts  dans l’image.
+Tandis que le format JPEG utilise une transformée en cosinus discrète, le format JPEG2000 s’appuie sur une transformée en ondelettes, mais aussi par la sélection de régions d’intérêts  dans l’image.
 
 ### Utilité
 
@@ -38,9 +38,11 @@ L’algorithme du format JPEG2000 se décompose en cinq grandes phases :
 ![Processus JPEG2000](doc-images/jpeg2000_process.png)
 
 ### Algorithme détaillé
-#### Transformée en ondelette discrète
+#### Transformée en ondelettes discrète
 
 La transformée en ondelette utilise deux filtres pour séparer les hautes fréquences de l’image des basses. Une convolution entre les filtres et le signal permet d’effectuer une itération de la transformée. En 2D, ils sont appliqués en hauteur et en largeur, ce qui donne 4 blocs, nommés `LL`, `LH`, `HL`, et `HH` : `L` pour low, les basses fréquences, et `H` pour high, les hautes fréquences. La première lettre correspond au filtrage horizontal et la deuxième au filtrage vertical. La convolution est ensuite réappliquée en boucle sur le bloc `LL` pour faire autant d’itérations que nécessaire.
+
+![Différentes itérations de la transformée en ondelettes](doc-images/wavelet.png)
 
 #### Quantification
 
